@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+#section-head,
+#section-about,
+#section-reviews,
+#section-contact {
+    padding: 2rem 4rem;
+}
+
+article {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+#button-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--mintGreen);
+    border: 1px solid var(--steelBlue);
+    color: var(--black);
+    border-radius: 0.5rem;
+    padding: .8rem;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow .5s;
+}
+
+#button-top:hover{
+    box-shadow: 0 0 .5rem var(--tropicalIndigo);
+}

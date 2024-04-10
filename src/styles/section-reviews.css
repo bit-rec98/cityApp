@@ -1,0 +1,80 @@
+#section-reviews h1, #section-reviews p{
+    color: var(--black);
+}
+
+@media screen and (min-width: 1024px) {
+    #section-reviews{
+        height: 100vh;
+        padding: 2rem 16rem;
+        background-color: var(--white);
+    }
+    #section-reviews article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #section-reviews h1{
+        font-size: 2.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    #section-reviews p{
+        margin: 4rem 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #section-reviews{
+        height: 100vh;
+        padding: 2rem 12rem;
+        background-color: var(--white);
+    }
+    #section-reviews article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #section-reviews h1{
+        font-size: 2.5rem;
+        margin: .5rem;
+        text-align: center;
+    }
+    
+    #section-reviews p{
+        margin: 4rem 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #section-reviews{
+        padding: 2rem 5.5rem;
+    }
+    #section-reviews h1{
+        font-size: 2rem;
+    }
+    
+    #section-reviews p{
+        margin: 3rem 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    #section-reviews{
+        padding: 2rem 3.5rem;
+    }
+    #section-reviews h1{
+        text-align: start;
+    }
+    #section-reviews p{
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    #section-reviews{
+        padding: 2rem;
+    }
+    #section-reviews p{
+        margin: 1rem 0;
+    }
+}

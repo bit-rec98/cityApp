@@ -1,11 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 :root{
-    --white: #f5f5f5;
-    --black: #121212;
-    --appleGreen: #72b01d;
+    --white: #e2e2e2;
+    --black: #222222;
+    --dimGray: #706c61;
+    --steelBlue: #2081c3;
     --mintGreen: #daffef;
+    --tropicalIndigo: #8e94f2;
     --fontSize: 1rem;
+};
+
+html{
+    margin: 0;
+    padding: 0;
 }
 
 *{
@@ -16,28 +25,5 @@
     list-style-type: none;
     font-size: var(--fontSize);
     scroll-behavior: smooth;
-    font-family: "Montserrat", sans-serif;
-}
-
-button{
-    padding: 1rem;
-    border: 1px solid var(--black);
-    border-radius: 1.5rem;
-    transition: .5s;
-    box-shadow: 0 0 0 transparent;
-}
-
-button:hover{
-    box-shadow: 0 0 .5rem var(--black);
-    background-color: var(--black);
-}
-
-a{
-    color: var(--black);
-    padding: 1rem;
-}
-
-section{
-    height: 100vh;
-    border: 1px solid var(--black);
-}
+    font-family: "Montserrat", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+};
