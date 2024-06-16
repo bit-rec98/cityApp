@@ -1,31 +1,50 @@
-#section-head h1{
-    font-size: 2.5rem;
-    margin: 1rem;
-    text-align: center;
-}
 
-#section-head p{
-    margin: 4rem 0;
-}
-#section-head a{
-    position: relative;
-    margin: 0;
-    padding: 1.5rem;
-    border: 1px solid var(--black);
-    border-radius: 1rem;
-}
 
 /** Responsive */
 @media screen and (min-width: 1024px) {
     #section-head{
-        height: 90vh;
+        height: 100vh;
         padding: 2rem 16rem;
+        background: linear-gradient(to top left, var(--mintGreen), var(--darkBlue));
     }
     #section-head article{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+    }
+    #section-head h1{
+        font-size: 3rem;
+        margin: 1.5rem 1rem;
+        text-align: center;
+        color: var(--white);
+    }
+    #app-name{
+        color: var(--paleAzure);
+        font-size: 3rem;
+    }
+    #section-head p{
+        margin: 3.5rem 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    #section-head a{
+        font-size: 1.2rem;
+        font-weight: 400;
+        position: relative;
+        margin: 0;
+        padding: 1rem 4rem;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid var(--steelBlue);
+        border-radius: .5rem;
+        box-shadow: 0 0 0 transparent;
+        transition: box-shadow .50s, background-color .25s;
+    }
+    
+    #section-head a:hover{
+        background-color: var(--mintGreen);
+        box-shadow: 0 0 1rem var(--darkBlue);
     }
 }
 
@@ -33,18 +52,23 @@
     #section-head{
         padding: 2rem 12rem;
         height: 100vh;
+        background: linear-gradient(to top left, var(--mintGreen), var(--darkBlue));
     }
     #section-head article{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
     #section-head h1{
         font-size: 2rem;
-        padding: .5rem;
-        margin: 0;
+        margin: 1.5rem 1rem;
         text-align: center;
+        color: var(--white);
+    }
+    #app-name{
+        color: var(--paleAzure);
+        font-size: 2rem;
     }
     #section-head a{
         left: 0%;
@@ -55,7 +79,26 @@
     }
 
     #section-head p{
-        margin: 4rem 0;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    #section-head a{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 1rem 4rem;
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid var(--steelBlue);
+        border-radius: .5rem;
+        box-shadow: 0 0 0 transparent;
+        transition: box-shadow .50s, background-color .25s;
+    }
+    
+    #section-head a:hover{
+        /* background-color: var(--mintGreen); */
+        box-shadow: 0 0 1rem var(--dimGray);
     }
 }
 
@@ -65,18 +108,18 @@
     }
     #section-head h1{
         font-size: 2rem;
-        padding: .5rem;
+        margin: 1rem;
     }
     #section-head a{
-        left: 0%;
-        bottom: 10%;
-        margin: 2.5rem 0;
+        margin: 2rem 0;
         padding: 1rem;
         font-size: 1rem;
     }
 
     #section-head p{
-        margin: 4rem 0;
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        font-weight: 400;
     }
 }
 
@@ -88,10 +131,9 @@
         font-size: 2rem;
         padding: .5rem;
         text-align: start;
+        margin: 0;
     }
     #section-head a{
-        left: 0%;
-        bottom: 10%;
         margin: 1.5rem 0;
         padding: 1rem;
         font-size: 1rem;
@@ -104,21 +146,23 @@
 
 @media screen and (max-width: 480px) {
     #section-head{
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+    #section-head article{
+        justify-content: flex-start;
     }
     #section-head h1{
         font-size: 1.5rem;
+        margin: 1rem 0;
         padding: .5rem;
     }
     #section-head a{
-        left: 0%;
-        bottom: 10%;
-        margin: 2.5rem 0;
+        margin: 3rem 0;
         padding: 1rem;
         font-size: 1rem;
     }
 
     #section-head p{
-        margin: 1.5rem 0;
+        margin: 2rem 0;
     }
 }

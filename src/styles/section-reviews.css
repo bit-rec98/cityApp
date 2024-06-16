@@ -1,10 +1,6 @@
-#section-reviews h1, #section-reviews p{
-    color: var(--black);
-}
-
 @media screen and (min-width: 1024px) {
     #section-reviews{
-        height: 100vh;
+        /* height: 100vh; */
         padding: 2rem 16rem;
         background-color: var(--white);
     }
@@ -15,19 +11,23 @@
         justify-content: space-evenly;
     }
     #section-reviews h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin: 1rem;
         text-align: center;
     }
     
     #section-reviews p{
         margin: 4rem 0;
+        font-size: 1.2rem;
+    }
+    #section-reviews h1, #section-reviews p{
+        color: var(--black);
     }
 }
 
 @media screen and (max-width: 1024px) {
     #section-reviews{
-        height: 100vh;
+        /* height: 100vh; */
         padding: 2rem 12rem;
         background-color: var(--white);
     }
@@ -38,13 +38,16 @@
         justify-content: space-evenly;
     }
     #section-reviews h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: .5rem;
         text-align: center;
     }
     
     #section-reviews p{
         margin: 4rem 0;
+    }
+    #section-reviews h1, #section-reviews p{
+        color: var(--black);
     }
 }
 @media screen and (max-width: 768px) {
@@ -76,5 +79,8 @@
     }
     #section-reviews p{
         margin: 1rem 0;
+    }
+    #section-reviews h1{
+        font-size: 1.5rem;
     }
 }

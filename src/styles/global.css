@@ -35,5 +35,6 @@ a {
 }
 
 #button-top:hover{
-    box-shadow: 0 0 .5rem var(--tropicalIndigo);
+    background-color: var(--mintGreen);
+    box-shadow: 0 0 1rem var(--paleAzure);
 }

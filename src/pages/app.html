@@ -5,46 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analizá datos de cualquier ciudad</title>
     <link rel="stylesheet" href="/src/index.css">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 </head>
 <body>
-    <header>
+    <header id="top">
         <nav id="navBar">
-            <a href="/index.html">CityApp</a>
+            <h1>CityApp</h1>
             <ul>
                 <li>
                     <a href="/index.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="/index.html#contacto">Contacto</a>
-                </li>
-                <li>
-                    <button>Dark</button>
+                    <a href="/index.html#section-contact">Contacto</a>
                 </li>
             </ul>
+            <div id="navBar-actions">
+                <select name="select-language" id="select-language">
+                    <option disabled selected>Idioma</option>
+                    <option>Español</option>
+                    <option>English</option>
+                </select>
+                <button id="button-theme">
+                    <span class="material-symbols-outlined"> dark_mode </span>
+                </button>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="app">
+    <main id="app">
+        <section id="features">
             <article>
-                <h1>Ingresá los datos de cualquier ciudad</h1>
-                <p>Vas a poder conocer información sobre:</p>
+                <div>
+                    <h1>Ingresá el nombre de cualquier ciudad</h1>
+                </div>
                 <ul>
-                    <li>Características del clima actual</li>
-                    <li>Noticias relevantes del día</li>
-                    <li>Hora actual</li>
+                    <p>Vas a poder conocer información sobre:</p>
+                    <li>
+                        <p>Características del clima actual</p>
+                    </li>
+                    <li>
+                        <p>Noticias relevantes del día</p>
+                    </li>
+                    <li>
+                        <p>Hora actual</p>
+                    </li>
                 </ul>
             </article>
         </section>
+        <section id="data-info">
+            <article>
+                <div id="search-bar">
+                    <div>
+                        <form>
+                            <label for="input-city">Ciudad: </label>
+                            <input id="input-city" name="city-name" type="text" required>
+                            <button type="submit">Buscar</button>
+                            <button type="button" onclick="console.dir(this)">Borrar búsqueda</button>
+                        </form>
+                    </div>
+                    <div>
+                        <button type="button" onclick="console.dir(this)">Búsqueda actual</button>
+                        <button type="button" onclick="console.dir(this)">Favoritos</button>
+                    </div>
+                </div>
+                <div id="main-container">
+                    <div id="weather-data">
+                        <div>Icon</div>
+                        <div>Weather data</div>
+                    </div>
+                    <div id="city-data">
+                        <div id="city-time">
+                            <div id="clock-display">Clock</div>
+                            <div id="date-display">Date</div>
+                        </div>
+                        <div id="city-info">
+                            <div>Currency data</div>
+                            <div>Random news</div>
+                        </div>
+                    </div>
+                    <div id="saved-data">
+
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section>
             <article>
-    
+                <ul>
+                    <li>
+                        <p>Córdoba - Argentina</p>
+                    </li>
+                    <li>
+                        <p>©CityApp - Todos los derechos reservados</p>
+                    </li>
+                </ul>
             </article>
         </section>
         <section>
             <article>
-    
+                <ul id="social-media">
+                    <li>
+                        <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Instagram</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" rel="noreferrer"
+                        >Twitter</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                        href="https://www.linkedin.com/in/recabarren-cristian/"
+                        target="_blank"
+                        rel="noreferrer"
+                        >LinkedIn</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/index.html#section-contact">Contacto</a>
+                    </li>
+                </ul>
             </article>
         </section>
     </footer>

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--white);
+    background-color: var(--black);
     padding: 1rem;
 }
 
@@ -17,7 +17,7 @@
 }
 
 #navBar h1, #navBar a{
-    color: var(--black);
+    color: var(--white);
 }
 
 #navBar a{
@@ -26,7 +26,7 @@
 }
 
 #navBar a:hover{
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--white);
 }
 
 #navBar h1{
@@ -44,6 +44,7 @@
 }
 
 #button-theme{
+    color: var(--white);
     padding: .5rem;
     background-color: transparent;
     border: 1px solid transparent;
@@ -57,7 +58,7 @@
 }
 
 #button-theme:hover{
-    box-shadow: 0 0 .5rem var(--dimGray);
+    box-shadow: 0 0 .5rem var(--white);
 }
 
 

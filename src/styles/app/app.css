@@ -1,0 +1,201 @@
+@media screen and (min-width: 1024px) {
+    #app{
+        /* height: 100vh; */
+        padding: 4rem;
+        background: linear-gradient(to top right, var(--tropicalIndigo), var(--white));
+    }
+    
+    #features article{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+    
+    #features h1{
+        font-size: 2rem;
+        text-align: start;
+    }
+    
+    #features ul{
+        margin: 0 6rem 0 0;
+    }
+    
+    #features li, #features p{
+        margin: 1rem;
+    }
+    
+    #features p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    #data-info article{
+        /* background-color: whitesmoke; */
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        box-shadow: .1rem .5rem .5rem 0 var(--darkBlue);
+    }
+
+    #data-info #search-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        /* padding: 1rem; */
+        /* border: 1px solid #222; */
+        background-color: var(--white);
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    #search-bar div:first-of-type, #search-bar div:last-of-type{
+        /* padding: 1rem; */
+        width: 50%;
+        height: 100%;
+    }
+
+    #search-bar div:first-of-type{
+        border-right: 1px solid #222;
+        padding: 1rem;
+        width: 65%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    #search-bar div:first-of-type label, #search-bar div:first-of-type input, #search-bar div:first-of-type button{
+        font-size: 1rem;
+        padding: .5rem;
+        margin: 0 1rem;
+        border-radius: .5rem;
+        border: 1px solid transparent;
+    }
+
+    #search-bar div:last-of-type{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-evenly;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 0;
+    }
+    
+    #search-bar div:last-of-type button{
+        font-size: 1rem;
+        padding: .5rem;
+        height: 100%;
+        width: 50%;
+        border-radius: .5rem;
+        border: 1px solid transparent;
+        /* margin: 0 1rem; */
+
+    }
+
+    #data-info #main-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border-radius: 0 0 .5rem .5rem ;
+        /* border: 1px solid #222; */
+        padding: 1.5rem;
+        height: 480px;
+        background-color: whitesmoke;
+    }
+
+    #main-container #weather-data, #main-container #city-data{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        /* border: 1px solid #222; */
+        /* background-color: white; */
+    }
+
+    #weather-data div{
+        background-color: var(--white);
+        /* border: 1px solid #222; */
+        border-radius: .5rem;
+        margin: .5rem 1rem;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #city-data #city-time, #city-data #city-info{
+        height: 100%;
+        width: 100%;
+        /* margin: .5rem 1rem; */
+        /* border: 1px solid #222; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+
+    #city-data #city-time div, #city-data #city-info div{
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid #222; */
+        background-color: var(--white);
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem .5rem;
+    }
+
+    #clock-display, #date-display{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #app{
+        height: 100vh;
+        padding: 4rem;
+        background: linear-gradient(to top right, var(--tropicalIndigo), var(--white));
+    }
+    
+    #features article{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+    }
+    
+    #features h1{
+        font-size: 2rem;
+        text-align: start;
+    }
+    
+    #features ul{
+        margin: 0 6rem 0 0;
+    }
+    
+    #features li, #features p{
+        margin: 1rem;
+    }
+    
+    #features p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}

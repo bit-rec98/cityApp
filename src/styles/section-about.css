@@ -26,6 +26,15 @@
         color: var(--white);
         padding: 1rem 6rem;
         border-radius: .5rem;
+        box-shadow: 0 0 0 transparent;
+        transition: box-shadow .5s;
+    }
+    #section-about a:hover{
+        box-shadow: 0 0 .5rem var(--paleAzure);
+    }
+
+    #section-about input, #section-about textarea{
+        border-radius: .5rem;
     }
 }
 
@@ -58,7 +67,6 @@
         padding: 1rem 6rem;
         border-radius: .5rem;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -87,5 +95,8 @@
     #section-about{
         height: 100vh;
         padding: 1.5rem;
+    }
+    #section-about h1{
+        font-size: 1.5rem;
     }
 }

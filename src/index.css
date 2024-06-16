@@ -5,10 +5,12 @@
 :root{
     --white: #e2e2e2;
     --black: #222222;
+    --darkBlue: #1c2932;
     --dimGray: #706c61;
     --steelBlue: #2081c3;
     --mintGreen: #daffef;
     --tropicalIndigo: #8e94f2;
+    --paleAzure: #90d7ff;
     --fontSize: 1rem;
 };
 
